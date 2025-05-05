@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>GIS Degree-Apprenticeships</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Paul McNicholas" />
+    <meta name="author" content="Sadia Munye" />
+    <meta name="date" content="2025-05-05" />
+    <script src="index_files/header-attrs/header-attrs.js"></script>
+    <link href="index_files/remark-css/default.css" rel="stylesheet" />
+    <link href="index_files/panelset/panelset.css" rel="stylesheet" />
+    <script src="index_files/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# GIS Degree-Apprenticeships
+]
+.subtitle[
+## The future of skills
+]
+.author[
+### Paul McNicholas
+]
+.author[
+### Sadia Munye
+]
+.date[
+### 2025-05-05
+]
+
+---
+
+
+
+
+
+
+## How we got here (Sadia)
+
+![](Sadia_timeline.png)
+
+---
+## How we got here (Paul)
+
+![](Paul_timeline.png)
+
+
+---
+
+## What is spatial data science
+
+&lt;div style="font-size: 1.2em; line-height: 1.6;"&gt;
+Spatial data science combines geographic concepts with data analysis to explore, visualise, and model spatial patterns and relationships, enabling insights into real-world issues like urban planning, environmental change and mobility patterns.
+&lt;/div&gt;
+
+&lt;div style="text-align: right; font-weight: bold; margin-top: 1em;"&gt;
+Definition: Kings College London
+&lt;/div&gt;
+
+
+&lt;br&gt;
+
+&lt;center&gt;
+&lt;img src="Definitions.png" style="width: 90%; max-height: 275px;" /&gt;
+&lt;/center&gt;
+
+---
+
+
+
+## Our Toolbox
+
+.panelset[
+.panel[.panel-name[R &amp; RStudio]
+
+&lt;div style="display: flex; align-items: flex-start; font-size: 1.2em; line-height: 1.6;"&gt; &lt;img src="R.png" style="height: 100px; margin-right: 25px;" /&gt; &lt;div&gt; &lt;ul&gt; &lt;li&gt; &lt;strong&gt;Open source&lt;/strong&gt;&lt;/li&gt; &lt;li&gt;Statistical and graphical language&lt;/li&gt; &lt;li&gt;Ideal for spatial stats, mapping, regression&lt;/li&gt; &lt;li&gt;&lt;strong&gt;Key packages:&lt;/strong&gt; &lt;code&gt;sf&lt;/code&gt;, &lt;code&gt;dplyr&lt;/code&gt;, &lt;code&gt;ggplot2&lt;/code&gt;&lt;/li&gt; &lt;li&gt;&lt;em&gt;Tidyverse&lt;/em&gt; brings them all together&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; ]
+.panel[.panel-name[QGIS]
+
+&lt;div style="display: flex; align-items: flex-start; font-size: 1.2em; line-height: 1.6;"&gt; &lt;img src="QGIS.png" style="height: 90px; margin-right: 25px;" /&gt; &lt;div&gt; &lt;ul&gt; &lt;li&gt; &lt;strong&gt;Open source &lt;/strong&gt;&lt;/li&gt; &lt;li&gt;Can be used to create and share maps&lt;/li&gt; &lt;li&gt;Can be used to analyse and process spatial data&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; ]
+.panel[.panel-name[Python &amp; Docker]
+&lt;div style="display: flex; align-items: flex-start; font-size: 1.2em; line-height: 1.6;"&gt;
+
+  &lt;!-- Container for two logos side by side --&gt;
+  &lt;div style="display: flex; flex-direction: column; margin-right: 25px;"&gt;
+    &lt;img src="Python.png" style="height: 90px; margin-bottom: 30px;" /&gt;
+    &lt;img src="Docker.png" style="height: 100px;" /&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Bullet points --&gt;
+  &lt;div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Open source&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Popular for automation and web development&lt;/li&gt;
+      &lt;li&gt;&lt;strong&gt;Key packages:&lt;/strong&gt; Geopandas, PySAL, Leafmap&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;]
+.panel[.panel-name[PostgreSQL &amp; PostGIS]
+
+&lt;div style="display: flex; align-items: flex-start; font-size: 1.2em; line-height: 1.6;"&gt;
+  
+  &lt;div style="margin-right: 25px;"&gt;
+    &lt;img src="postgis-logo.png" style="height: 90px; display: block; margin-bottom: 30px;" /&gt;
+    &lt;img src="PostgreSQL.webp" style="height: 100px;" /&gt;
+  &lt;/div&gt;
+  
+  &lt;div&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;Open source&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;Used for spatial queries &amp; data processing&lt;/li&gt;
+      &lt;li&gt;Supports dashboards &amp; spatial web apps&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;]
+.panel[.panel-name[Google Earth Engine]
+
+&lt;div style="display: flex; align-items: flex-start; font-size: 1.2em; line-height: 1.6;"&gt; &lt;img src="GEE.png" style="height: 80px; margin-right: 35px;" /&gt; &lt;div&gt; &lt;ul&gt; &lt;li&gt; &lt;strong&gt;Free for academics&lt;/strong&gt;&lt;/li&gt; &lt;li&gt;Can be used for processing large ammounts of satelite imagery, building spatial applications and environmental monitoring.
+&lt;/li&gt; &lt;li&gt;APIs in Python and JavaScript&lt;/li&gt; &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; ] ] 
+
+---
+## “Everything is related to everything else but near things are more related than distant things” – Waldo Tobler
+
+### We’ve explored:
+- **Detecting spatial patterns**
+
+
+&lt;div style="display: flex; justify-content: space-between;"&gt;
+  &lt;div style="text-align: center; width: 35%;"&gt;
+    &lt;img src="Contaminated_rounds.png" style="width: 100%; max-height: 300px; height: auto;" /&gt;
+    &lt;p style="font-size: 0.85em; margin-top: 8px;"&gt;Contaminated Bins by Collection Round&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div style="text-align: center; width: 50%;"&gt;
+    &lt;img src="Density_contamination.png" style="width: 100%; max-height: 300px; height: auto;" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+---
+
+### Frequency of Exceptions
+
+| Recycling Round | Frequency |
+|-----------------|-----------|
+| RY-03           | 2143      |
+| RY-06           | 879       |
+| RY-02           | 810       |
+| RY-10           | 653       |
+| RY-07           | 293       |
+| RY-08           | 67        |
+| RY-04           | 61        |
+| RY-05           | 37        |
+| RY-01           | 6         |
+| **Total**       | **4949**  |
+
+
+---
+
+## Explaining spatial patterns
+
+&lt;img src="Picture1.png" style="width: 80%;" /&gt;
+
+---
+
+## Heat Stress Vulnerability Index
+
+
+&lt;div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-top: 10px;"&gt;
+
+  &lt;div style="flex: 1; font-size: 1.2em; line-height: 1.6;"&gt;
+    &lt;p&gt;App created to identify areas that are at higher risk of heat-related issues.&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Focused on vulnerability (age), building mass, NDVI (vegetation health), and Land Surface Temperature.&lt;/li&gt;
+      &lt;li&gt;Score calculated for each metric, then a weighted sum for overall index value.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div style="flex: 1; text-align: center;"&gt;
+    &lt;img src="Index.png" style="width: 100%; max-height: 450px; border: 1px solid #ccc;" /&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+
+---
+
+## Heat Stress Vulnerability Index - App Demo
+
+
+&lt;video width="720" height="405" controls&gt;
+  &lt;source src="HSVI_Video_clipped.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;
+
+---
+
+
+## Learning outcomes and challenges
+
+&lt;div style="font-size: 1.3em; line-height: 1.6;"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Ask the right questions and understand your data before rushing into analysis or modelling.&lt;/li&gt;
+    &lt;li&gt;Being patient and organised is important but it is also important to note that you might struggle at the beginning but that is what learning is for.&lt;/li&gt;
+    &lt;li&gt;Moving from being mainly outcome focused to considering the implications of different techniques.&lt;/li&gt;
+    &lt;li&gt;Understanding that you don’t need to know everything off by heart&lt;/li&gt;
+    &lt;li&gt;Red tape (internally)!&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+
+---
+## Whats next?
+### Automation?
+
+---
+
+## What's next?
+
+&lt;div style="font-size: 1.2em; line-height: 1.6;"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Implementing remote sensing dataset use within Camden, including within spatial analysis projects&lt;/li&gt;
+    &lt;li&gt;Critique own spatial analysis results and methodology and providing confidence ratings with analysis&lt;/li&gt;
+    &lt;li&gt;Speaking to more services about analysis projects and how these could lead into dissertation topics&lt;/li&gt;
+    &lt;li&gt;Ensuring current Data Analysts consider the power of geospatial in their own analysis.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+
+---
+class: inverse, center, middle
+background-color: #008080
+color: white
+
+# Thank you!
+
+&lt;div style="font-size: 1.2em; line-height: 1.8; color: white; max-width: 700px; margin: 0 auto;"&gt;
+
+Slides created using the R packages:&lt;br&gt;
+&lt;a href="https://github.com/yihui/xaringan" style="color: white; font-weight: bold;"&gt;xaringan&lt;/a&gt; &amp;nbsp;|&amp;nbsp;
+&lt;a href="https://github.com/gadenbuie/xaringanthemer" style="color: white; font-weight: bold;"&gt;xaringanthemer&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+
+Built with &lt;a href="https://yihui.org/knitr/" style="color: white;"&gt;knitr&lt;/a&gt;, 
+&lt;a href="https://rmarkdown.rstudio.com/" style="color: white;"&gt;R Markdown&lt;/a&gt;, and 
+powered by &lt;a href="https://remarkjs.com/" style="color: white;"&gt;remark.js&lt;/a&gt;.
+
+&lt;/div&gt;
+
+--
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
