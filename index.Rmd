@@ -91,7 +91,7 @@ xaringanExtra::use_panelset()
   <!-- Container for two logos side by side -->
   <div style="display: flex; flex-direction: column; margin-right: 25px;">
     <img src="Python.png" style="height: 90px; margin-bottom: 30px;" />
-    <img src="Docker.png" style="height: 100px;" />
+    <img src="docker.png" style="height: 100px;" />
   </div>
 
   <!-- Bullet points -->
