@@ -40,6 +40,19 @@ style_duo_accent(
 )
 ```
 
+##What is the degree apprenticeship?
+
+<div style="font-size: 1.3em; line-height: 1.6;">
+<ul>
+  <li>Spatial Data Scientist – Level 7 degree apprenticeship</li>
+  <li>Government levy funded</li>
+  <li>Soft launched by <strong>UCL</strong> last year</li>
+  <li>Created in collaboration with <strong>Tower Hamlets</strong> and <strong>Camden</strong></li>
+  <li>Split time between study, work, and apprenticeship over <strong>2 years</strong></li>
+  <li>Outcome: Spatial Data Scientist apprenticeship and MSc in Spatial Data Science</li>
+</ul>
+
+---
 
 class: inverse, center, middle
 
@@ -101,17 +114,19 @@ xaringanExtra::use_panelset()
     <img src="docker.png" style="height: 100px;" />
   </div>
 
-  <!-- Bullet points -->
-  <div>
-    <ul>
-      <li><strong>Open source</strong></li>
-      <li>Popular for automation and web development</li>
-      <li><strong>Key packages:</strong> Geopandas, PySAL, Leafmap</li>
-    </ul>
-  </div>
+
+<!-- Bullet points -->
+<div>
+  <ul>
+    <li><strong>Open source</strong></li>
+    <li>Popular for automation and web development</li>
+    <li><strong>Key packages:</strong> <code>Geopandas</code>, <code>PySAL</code>, <code>Leafmap</code></li>
+    <li>Docker allows you to package applications and their dependencies into containers, making them easy to run, deploy, and manage across different environments.</li>
+  </ul>
+</div>
 
 </div>]
-.panel[.panel-name[PostgreSQL & PostGIS]
+.panel[.panel-name[Databases]
 
 <div style="display: flex; align-items: flex-start; font-size: 1.2em; line-height: 1.6;">
   
@@ -125,6 +140,7 @@ xaringanExtra::use_panelset()
       <li><strong>Open source</strong></li>
       <li>Used for spatial queries & data processing</li>
       <li>Supports dashboards & spatial web apps</li>
+      <li>DuckDB - Online analytical processing (OLAP) - designed for analysis and handling of large datasets</li>
     </ul>
   </div>
 
@@ -160,7 +176,7 @@ cat('
 
 ###Detecting spatial patterns
 
-Frequency of Recycling Exceptions by round in 24/25
+**Frequency of Recycling Exceptions by round in 24/25**
 
 | Recycling Round | Frequency |
 |-----------------|-----------|
@@ -180,7 +196,37 @@ Frequency of Recycling Exceptions by round in 24/25
 
 ## Explaining spatial patterns
 
-<img src="Picture1.png" style="width: 80%;" />
+<div style="text-align: center;">
+
+  <!-- Resized & centered image -->
+  <img src="Picture1.png" alt="Spatial image" style="width: 60%; max-width: 500px; margin-bottom: 20px;" />
+
+  <!-- Smaller & centered table -->
+  <table style="margin: 0 auto; font-size: 0.85em; border-collapse: collapse;">
+    <tr>
+      <th>Cluster</th>
+      <th>Age 20–34</th>
+      <th>Deprivation</th>
+      <th>Privately Rented</th>
+      <th>Non-English Speakers</th>
+      <th>Population Density</th>
+    </tr>
+    <tr>
+      <td>1</td><td>756</td><td>2</td><td>314</td><td>115</td><td>18958</td>
+    </tr>
+    <tr>
+      <td>2</td><td>1000</td><td>2</td><td>483</td><td>200</td><td>30047</td>
+    </tr>
+    <tr>
+      <td>3</td><td>672</td><td>10</td><td>233</td><td>122</td><td>20830</td>
+    </tr>
+    <tr>
+      <td>4</td><td>524</td><td>3</td><td>162</td><td>75</td><td>20400</td>
+    </tr>
+  </table>
+
+</div>
+
 
 ---
 
@@ -188,9 +234,9 @@ Frequency of Recycling Exceptions by round in 24/25
 
 ```{r echo=FALSE, results='asis'}
 cat('
-<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-top: 10px;">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 30px; margin-top: 10px;">
 
-  <div style="flex: 1; font-size: 1.2em; line-height: 1.6;">
+  <div style="flex: 1; font-size: 1.1em; line-height: 1.6;">
     <p>App created to identify areas that are at higher risk of heat-related issues.</p>
     <ul>
       <li>Focused on vulnerability (age), building mass, NDVI (vegetation health), and Land Surface Temperature.</li>
@@ -199,7 +245,7 @@ cat('
   </div>
 
   <div style="flex: 1; text-align: center;">
-    <img src="Index.png" style="width: 100%; max-height: 450px; border: 1px solid #ccc;" />
+    <img src="Index.png" style="max-width: 100%; height: auto; max-height: 400px; border: 1px solid #ccc;" />
   </div>
 
 </div>
@@ -243,9 +289,9 @@ cat('
 
 <div style="display: flex; justify-content: space-around; align-items: center; gap: 20px; margin-top: 20px;">
 
-  <img src="Picture5.png" style="width: 30%; border: 1px solid #ccc;" />
-  <img src="Picture2.png" style="width: 30%; border: 1px solid #ccc;" />
   <img src="Picture4.png" style="width: 30%; border: 1px solid #ccc;" />
+  <img src="Picture2.png" style="width: 30%; border: 1px solid #ccc;" />
+  <img src="Picture5.png" style="width: 30%; border: 1px solid #ccc;" />
 
 </div>
 
@@ -262,6 +308,59 @@ cat('
     <li>Ensuring current Data Analysts consider the power of geospatial in their own analysis.</li>
   </ul>
 </div>
+
+
+---
+
+##Some useful resources 
+
+```{r echo=FALSE, results='asis'}
+cat('
+<h3>Further Learning</h3>
+
+<div style="display: flex; gap: 30px; align-items: flex-start; margin-top: 20px;">
+
+  <!-- Left: Info and Contact -->
+  <div style="flex: 1; font-size: 1em;">
+    <ul>
+      <li><a href="https://www.un-spider.org/news-and-events/events/spatial-data-science-and-applications" target="_blank">
+        UN-SPIDER: Spatial Data Science and Applications
+      </a></li>
+      <li><a href="https://www.esri.com/training/catalog/5d76dcf7e9ccda09bef61294/spatial-data-science-the-new-frontier-in-analytics/" target="_blank">
+        Esri Training: Spatial Data Science – The New Frontier in Analytics
+      </a></li>
+      <li><a href="https://www.ordnancesurvey.co.uk/customers/public-sector/geospatial-data-analysis-and-visualisation-course" target="_blank">
+        OS: Geospatial Data Analysis and Visualisation in R and Python (Public Sector Course)
+      </a></li>
+      <li><a href="https://www.youtube.com/watch?v=_V8eKsto3Ug" target="_blank">YouTube: Intro to R</a></li>
+      <li><a href="https://www.youtube.com/watch?v=kqtD5dpn9C8&t=30s" target="_blank">YouTube: Intro to Python</a></li>
+    </ul>
+
+    <p style="margin-top: 20px;">
+      For more information on the apprenticeship, visit the 
+      <a href="https://www.ucl.ac.uk/prospective-students/graduate/taught-degrees/urban-spatial-science-degree-apprenticeship-msc" target="_blank">
+        UCL Urban Spatial Science Degree Apprenticeship page
+      </a>.
+    </p>
+
+    <p style="margin-bottom: 0;">
+      Contact us:<br />
+      <a href="mailto:Sadia.Munye@towerhamlets.gov.uk">Sadia.Munye@towerhamlets.gov.uk</a><br />
+      <a href="mailto:Paul.McNicholas@camden.gov.uk">Paul.McNicholas@camden.gov.uk</a>
+    </p>
+  </div>
+
+  <!-- Right: Image -->
+  <div style="flex: 1; text-align: center;">
+    <img src="OS.png" alt="Front page preview" style="max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 6px;" />
+  </div>
+
+</div>
+')
+
+```
+
+
 
 
 ---
@@ -283,4 +382,4 @@ powered by <a href="https://remarkjs.com/" style="color: white;">remark.js</a>.
 
 </div>
 
---
+---
